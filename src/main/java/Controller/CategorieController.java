@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 
 
 @Controller
-@RequestMapping(path="/")
+@RequestMapping(path="/myTemplate")
 /**
  *
  * @author 33686
@@ -27,8 +27,8 @@ public class CategorieController {
     
     @GetMapping(path = "show")
     public String afficheToutesLesCategories(Model model) {
-	model.addAttribute("categories", dao.findAll());
-	return "showCategories";
+	model.addAttribute("city", dao.findAll());
+	return "showCity";
     }
     
     @GetMapping(path = "add")
