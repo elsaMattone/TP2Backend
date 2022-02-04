@@ -9,7 +9,22 @@
 
 <body>
 	<h1>Exemple</h1>
+        
+        <a href='add'>Ajouter</a>
+
 	<h2>{{message}}</h2>
+
+	<table>
+		<tr><th>Nom</th><th>Pays</th><th>Population</th>
+		{{#categories}}
+			<tr>
+                            <td>{{nom}}</td>
+                            <td>{{pays}}</td>
+                            <td>{{population}}</td>
+			</tr>
+		{{/categories}}
+	</table>
+	
 </body>
 
 </html>
